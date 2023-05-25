@@ -1,0 +1,108 @@
+/* Added the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+
+
+/* CSS Varriables */
+:root {
+    --nb-primary-color: #FFD23F;
+    --nb-secondary-color: #424B54;
+    --nb-accent-color: #7F95D1;
+    --nb-text-white-color: #ffffff;
+    --nb-text-black-color: #000000;
+    --nb-bg-off-white: #f8f8f8;
+    --nb-primary-font: 'Montserrat', sans-serif;
+    --nb-secondery-font: 'Lato', sans-serif;
+    --nb-border: 3px solid #ffffff;
+}
+
+/* General CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--nb-primary-font);
+    letter-spacing: 1px;
+    line-height: 1.4rem;
+}
+
+body {
+    font-family: var(--nb-secondery-font);
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.6rem;
+}
+
+a {
+    font-family: var(--nb-secondery-font);
+    text-decoration: none;
+    color: var(--nb-accent-color);
+    letter-spacing: 0.5px;
+}
+
+hr {
+    height: 4px;
+    width: 13%;
+    background-color: var(--nb-primary-color);
+}
+
+.nb-primary-btn {
+    background-color: #000000;
+    color: #ffffff!important;
+    padding: 8px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nb-primary-btn:hover {
+    background-color: var(--nb-accent-color);
+    color: #000000!important;
+    padding: 8px 20px;
+}
+
+/* Navigation Styles */
+
+.nb-navbar-container {
+    background-color: var(--nb-primary-color);
+}
+
+.nb-navbar-container nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    align-items: center;
+    box-shadow: #000000 1px -18px 48px 0px;
+}
+
+#nb-navbar-logo img {
+    width: 80px;
+}
+
+.nb-navbar-container nav .nb-navmenu-container .navigation {
+    display: flex;
+}
+
+.nb-navbar-container nav .nb-navmenu-container .navigation .nav-item {
+    list-style-type: none;
+}
+
+.nb-navbar-container nav .nb-navmenu-container .navigation .nav-item a {
+    font-family: var(--nb-primary-font);
+    font-weight: 700;
+    letter-spacing: 1px;
+    list-style-type: none;
+    text-transform: uppercase;
+    color: var(--nb-text-black-color);
+    margin-right: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nb-navbar-container nav .nb-navmenu-container .navigation .nav-item a:hover {
+    color: var(--nb-text-white-color);
+}
