@@ -38,6 +38,7 @@ h4,
 h5,
 h6 {
     font-family: var(--nb-primary-font);
+    font-weight: 700;
     letter-spacing: 1px;
     line-height: 1.4rem;
 }
@@ -60,6 +61,24 @@ hr {
     height: 4px;
     width: 13%;
     background-color: var(--nb-primary-color);
+}
+
+/* Utility Classes */
+
+.nb-h1-heading {
+    font-size: 4.5rem;
+}
+
+.nb-h2-heading {
+    font-size: 3.5rem;
+}
+
+.nb-h3-heading {
+    font-size: 2rem;
+}
+
+.nb-h4-heading {
+    font-size: 1.5rem;
 }
 
 .nb-primary-btn {
@@ -126,6 +145,42 @@ hr {
 
 /* mobile nav styles */
 @media only screen and (max-width: 767px) {
+
+    /* Utility Classes */
+    .nb-h1-heading {
+        font-size: 3.5rem;
+    }
+
+    .nb-h2-heading {
+        font-size: 3.5rem;
+    }
+    
+    .nb-h3-heading {
+        font-size: 2rem;
+    }
+    
+    .nb-h4-heading {
+        font-size: 1.5rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    .nb-primary-btn {
+        background-color: #000000;
+        color: #ffffff !important;
+        padding: 8px 20px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .nb-primary-btn:hover {
+        background-color: var(--nb-accent-color);
+        color: #000000 !important;
+        padding: 8px 20px;
+    }
+
+    /* Navbar Styles  */
 
     .nb-mob-navbar {
         display: block;
