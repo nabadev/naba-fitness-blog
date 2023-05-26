@@ -1,5 +1,5 @@
 /* Added the fonts */
-  @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700&display=swap');
 
 
 /* CSS Varriables */
@@ -65,6 +65,17 @@ hr {
 
 /* Utility Classes */
 
+.nb-container {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+}
+
+.nb-row {
+    width: 80%;
+    height: 100%;
+}
+
 .nb-h1-heading {
     font-size: 4.5rem;
 }
@@ -92,6 +103,21 @@ hr {
     background-color: var(--nb-accent-color);
     color: #000000 !important;
     padding: 8px 20px;
+}
+
+.nb-secondary-btn {
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-color: var(--nb-primary-color);
+    color: var(--nb-text-black-color) !important;
+    padding: 8px 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nb-secondary-btn:hover {
+    background-color: var(--nb-accent-color);
+    color: #000000 !important;
+    padding: 8px 35px;
 }
 
 /* Navigation Styles */
@@ -143,6 +169,59 @@ hr {
     display: none;
 }
 
+/* Hero section styles */
+
+.nb-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.nb-hero-container {
+    position: relative;
+    z-index: 1;
+}
+
+.nb-hero-container::before {
+    content: "";
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.53) 100%), url("assets/hero-bg.jpg") no-repeat top / cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.nb-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    height: 450px;
+}
+
+.nb-hero-content {
+    width: 60%;
+}
+
+.nb-hero-div {
+    width: 100%;
+    height: 100%;
+}
+
+.nb-hero-content .nb-hero-heading {
+    line-height: 4rem;
+    color: var(--nb-text-white-color);
+}
+
+.nb-hero-text {
+    color: var(--nb-text-white-color);
+    margin: 30px 0px;
+}
+
 /* mobile nav styles */
 @media only screen and (max-width: 767px) {
 
@@ -154,11 +233,11 @@ hr {
     .nb-h2-heading {
         font-size: 3.5rem;
     }
-    
+
     .nb-h3-heading {
         font-size: 2rem;
     }
-    
+
     .nb-h4-heading {
         font-size: 1.5rem;
     }
@@ -173,11 +252,19 @@ hr {
         padding: 8px 20px;
         transition: all 0.3s ease-in-out;
     }
-    
+
     .nb-primary-btn:hover {
         background-color: var(--nb-accent-color);
         color: #000000 !important;
         padding: 8px 20px;
+    }
+
+    .nb-secondary-btn {
+        font-size: 18px;
+        padding: 8px 15px !important;
+        width: 170px;
+        margin: 0 auto;
+
     }
 
     /* Navbar Styles  */
@@ -185,6 +272,10 @@ hr {
     .nb-mob-navbar {
         display: block;
         position: relative;
+    }
+
+    .nb-mob-navbar .mob-navigation {
+        z-index: 999999;
     }
 
     .nb-navmenu-container .navigation {
@@ -224,7 +315,7 @@ hr {
         height: 280px;
         padding: 20px 30px;
         border: 4px solid #ffffff;
-        transform: translateX(85px);
+        transform: translateX(250px);
         transition: all 0.4s ease-in-out;
     }
 
@@ -249,13 +340,80 @@ hr {
         color: var(--nb-text-black-color) !important;
     }
 
+    /* Hero section styles */
+
+    .nb-container {
+        grid-template-columns: 1fr;
+        padding: 50px 0px 100px 0px;
+    }
+
+    .nb-row {
+        grid-template-columns: 1fr;
+    }
+
+    .nb-hero-content {
+        width: 100%;
+    }
+
+    .nb-hero-div {
+        display: none;
+    }
+
+    .nb-hero-content .nb-hero-heading {
+        line-height: 3.5rem;
+        text-align: center;
+        color: var(--nb-text-white-color);
+    }
+
+    .nb-hero-text {
+        text-align: center;
+        color: var(--nb-text-white-color);
+        margin: 20px 0px;
+    }
+
+
+    .nb-hero-cta-btn {
+        display: block;
+        text-align: center;
+    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
+    /* Utility Class */
+
+    .nb-primary-btn {
+        background-color: #000000;
+        color: #ffffff !important;
+        padding: 8px 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nb-primary-btn:hover {
+        background-color: var(--nb-accent-color);
+        color: #000000 !important;
+        padding: 8px 20px;
+    }
+
+    .nb-secondary-btn {
+        font-size: 18px;
+        padding: 8px 15px !important;
+        width: 200px;
+        margin: 0 auto;
+
+    }
+
+
+    /* Navigation Styles */
+
     .nb-mob-navbar {
         display: block;
         position: relative;
+    }
+
+    .nb-mob-navbar .mob-navigation {
+        z-index: 999999;
     }
 
     .nb-navmenu-container .navigation {
@@ -294,12 +452,12 @@ hr {
         display: block;
         background-color: #000000;
         position: absolute;
-        top: 30px;
+        top: 40px;
         width: 35vw;
         height: 420px;
         padding: 40px 50px;
         border: 4px solid #ffffff;
-        transform: translateX(80px);
+        transform: translateX(150px);
         transition: all 0.4s ease-in-out;
     }
 
@@ -323,5 +481,41 @@ hr {
         padding: 2px 10px;
         color: var(--nb-text-black-color) !important;
     }
+
+    /* Hero section styles */
+
+    .nb-container {
+        grid-template-columns: 1fr;
+    }
+
+    .nb-row {
+        grid-template-columns: 1fr;
+    }
+
+    .nb-hero-content {
+        width: 100%;
+    }
+
+    .nb-hero-div {
+        display: none;
+    }
+
+    .nb-hero-content .nb-hero-heading {
+        line-height: 4rem;
+        text-align: center;
+        color: var(--nb-text-white-color);
+    }
+
+    .nb-hero-text {
+        text-align: center;
+        color: var(--nb-text-white-color);
+        margin: 20px 0px;
+    }
+
+    .nb-hero-cta-btn {
+        display: block;
+        text-align: center;
+    }
+
 
 }
