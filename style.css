@@ -381,15 +381,18 @@ img {
     padding: 30px 0px;
     background-color: var(--nb-bg-off-white);
 }
+
 .nb-sidebar-posts-container {
     display: grid;
     justify-items: center;
 }
+
 .nb-sidebar-posts-container .nb-sidebar-posts-row {
     display: grid;
     grid-template-columns: 2fr 5fr;
     gap: 2rem;
 }
+
 .nb-sidebar-posts-container .nb-sidebar-posts-row .nb-sidebar {
     width: 100%;
     height: 100%;
@@ -406,6 +409,7 @@ img {
     margin-top: 10px;
     width: 40%;
 }
+
 .nb-sidebar-posts-container .nb-sidebar-posts-row .nb-categories .nb-category-list {
     list-style: circle;
 }
@@ -444,6 +448,7 @@ img {
     border: 2px solid var(--nb-primary-color);
 
 }
+
 .nb-email-optin .nb-email-optin-form .nb-email-optin-btn {
     font-family: var(--nb-primary-font);
     font-size: 16px;
@@ -484,11 +489,12 @@ img {
     background-color: #ffffff;
     box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
 }
-.nb-sidebar-posts-container .nb-sidebar-posts-row .nb-popular-posts  .nb-popular-blog-section-title {
+
+.nb-sidebar-posts-container .nb-sidebar-posts-row .nb-popular-posts .nb-popular-blog-section-title {
     text-align: center;
 }
 
-.nb-sidebar-posts-container .nb-sidebar-posts-row .nb-popular-posts  .nb-popular-blog-section-title hr {
+.nb-sidebar-posts-container .nb-sidebar-posts-row .nb-popular-posts .nb-popular-blog-section-title hr {
     margin: 10px auto;
 }
 
@@ -501,7 +507,7 @@ img {
 
 .nb-sidebar-posts-container .nb-sidebar-posts-row .nb-popular-posts .nb-popular-blog {
     padding: 20px;
-    box-shadow:  0 .25rem 1rem rgb(0 0 0 / .1);
+    box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
 }
 
 .nb-sidebar-posts-container .nb-sidebar-posts-row .nb-popular-posts .nb-popular-blog .nb-popular-blog-content {
@@ -509,12 +515,12 @@ img {
 }
 
 .nb-sidebar-posts-container .nb-sidebar-posts-row .nb-popular-posts .nb-popular-blog .nb-popular-blog-content h3 {
-   margin-bottom: 10px;
-   transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .nb-sidebar-posts-container .nb-sidebar-posts-row .nb-popular-posts .nb-popular-blog .nb-popular-blog-content h3:hover {
-   color: var(--nb-primary-color);
+    color: var(--nb-primary-color);
 }
 
 
@@ -754,6 +760,19 @@ img {
         letter-spacing: 1px;
         font-size: 1.1rem;
     }
+
+    /* Categories Sidebar and Popular Posts Section */
+
+    .nb-sidebar-posts-container .nb-sidebar-posts-row {
+        grid-template-columns: minmax(auto, 1fr);
+        justify-items: center;
+    }
+
+    /* nb popular posts */
+
+    .nb-sidebar-posts-container .nb-sidebar-posts-row .nb-popular-posts .nb-popular-posts-blog {
+        grid-template-columns: minmax(auto, 1fr);
+      }
 
 }
 
