@@ -685,6 +685,10 @@ img {
         grid-template-columns: 1fr;
     }
 
+    .nb-hero-row {
+        height: 500px;
+    }
+
     .nb-hero-content {
         width: 100%;
     }
@@ -1027,6 +1031,16 @@ img {
         margin-top: 15px !important;
         letter-spacing: 1px;
         font-size: 1.1rem;
+    }
+
+    /* Sidebar and popular post section*/
+    .nb-sidebar-posts-container .nb-sidebar-posts-row {
+        justify-content: center;
+    }
+
+    /* CTA Section */
+    #nb-cta-section .nb-cta-container .nb-cta-row h2 {
+        line-height: 3.5rem;
     }
 
 }
