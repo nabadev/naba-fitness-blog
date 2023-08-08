@@ -536,20 +536,20 @@ img {
     margin: 0 auto;
 }
 
-#nb-cta-section .nb-cta-container .nb-cta-row h2{
+#nb-cta-section .nb-cta-container .nb-cta-row h2 {
     text-align: center;
     margin-bottom: 25px;
 }
 
-#nb-cta-section .nb-cta-container .nb-cta-row .nb-cta-btn{
+#nb-cta-section .nb-cta-container .nb-cta-row .nb-cta-btn {
     margin-top: 30px;
     cursor: pointer;
     text-align: center;
 }
 
-#nb-cta-section .nb-cta-container .nb-cta-row .nb-cta-btn:hover{
+#nb-cta-section .nb-cta-container .nb-cta-row .nb-cta-btn:hover {
     background-color: var(--nb-secondary-color);
-    color: var(--nb-text-white-color)!important;
+    color: var(--nb-text-white-color) !important;
 }
 
 /* Footer Styles */
@@ -559,7 +559,7 @@ img {
     color: var(--nb-text-white-color);
 }
 
-#nb-footer-section .nb-footer-container  {
+#nb-footer-section .nb-footer-container {
     padding: 50px 0px 0px 0px;
 }
 
@@ -567,8 +567,14 @@ img {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
     margin: 0 auto;
     padding-bottom: 50px;
+}
+
+
+#nb-footer-section .nb-footer-container .nb-footer-row .nb-footer-logo-info {
+    width: 100%;
 }
 
 #nb-footer-section .nb-footer-container .nb-footer-row .nb-footer-logo-info #nb-footer-logo {
@@ -587,6 +593,7 @@ img {
 }
 
 #nb-footer-section .nb-footer-container .nb-footer-row .nb-footer-links {
+    width: 100%;
     margin-top: 30px;
 }
 
@@ -606,12 +613,12 @@ img {
 }
 
 #nb-footer-section .nb-footer-container .nb-footer-row .nb-footer-address {
+    width: 100%;
     margin-top: 30px;
 }
 
 #nb-footer-section .nb-footer-container .nb-footer-row .nb-footer-address a {
     color: var(--nb-text-white-color);
-    line-height: 2.3rem;
     letter-spacing: 1px;
     margin-top: 20px;
 }
@@ -621,6 +628,7 @@ img {
 }
 
 #nb-footer-section .nb-footer-container .nb-footer-row .nb-footer-email-optin {
+    width: 100%;
     margin-top: 30px;
 }
 
@@ -634,6 +642,7 @@ img {
     font-family: var(--nb-secondery-font);
     font-size: 16px;
     letter-spacing: 0.5px;
+    border-radius: 0px;
 }
 
 #nb-footer-section .nb-footer-container .nb-footer-row .nb-footer-email-optin #nb-footer-email-form .nb-footer-submit-btn {
@@ -650,12 +659,14 @@ img {
     color: var(--nb-text-black-color);
     text-align: center;
     font-size: 16px;
+    padding: 10px 0px;
 }
 
 #nb-footer-section .nb-footer-copyright-bar a {
     font-weight: 700;
     color: var(--nb-text-black-color);
 }
+
 /* mobile styles */
 @media only screen and (max-width: 767px) {
 
@@ -910,12 +921,36 @@ img {
 
     .nb-sidebar-posts-container .nb-sidebar-posts-row .nb-popular-posts .nb-popular-posts-blog {
         grid-template-columns: minmax(auto, 1fr);
-      }
+    }
 
-      /* CTA Section Styles */
-      #nb-cta-section {
+    /* CTA Section Styles */
+    #nb-cta-section {
         padding: 0px;
-      }
+    }
+
+    /* Footer Section */
+
+    #nb-footer-section .nb-footer-container .nb-footer-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #nb-footer-section .nb-footer-container .nb-footer-row .nb-footer-logo-info #nb-footer-logo {
+        max-width: 35%;
+    }
+
+    #nb-footer-section .nb-footer-container .nb-footer-row .nb-footer-email-optin #nb-footer-email-form #nb-footer-email {
+        width: 70%;
+    }
+
+    #nb-footer-section .nb-footer-container .nb-footer-row .nb-footer-email-optin #nb-footer-email-form .nb-footer-submit-btn {
+        width: 70%;
+    }
+
+    /* Copyright Bar  */
+    #nb-footer-section .nb-footer-copyright-bar {
+        font-size: 13px;
+    }
 
 }
 
@@ -1144,5 +1179,25 @@ img {
     #nb-cta-section .nb-cta-container .nb-cta-row h2 {
         line-height: 3.5rem;
     }
+
+    /* Footer Section */
+
+    #nb-footer-section .nb-footer-container .nb-footer-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #nb-footer-section .nb-footer-container .nb-footer-row .nb-footer-logo-info #nb-footer-logo {
+        max-width: 25%;
+    }
+
+    #nb-footer-section .nb-footer-container .nb-footer-row .nb-footer-email-optin #nb-footer-email-form #nb-footer-email {
+        width: 70%;
+    }
+
+    #nb-footer-section .nb-footer-container .nb-footer-row .nb-footer-email-optin #nb-footer-email-form .nb-footer-submit-btn {
+        width: 70%;
+    }
+
 
 }
